@@ -8,10 +8,8 @@
         Title="MainWindow" Height="468" Width="631">
     <Grid Margin="0,0,0,-16">
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="90" Margin="0,10,0,0" VerticalAlignment="Top" Width="611"/>
-        <TextBox x:Name="passwordTextBox" HorizontalAlignment="Left" Margin="122,42,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="161" FontSize="16"/>
         <Button x:Name="getFlagButton" Content="Get Flag" HorizontalAlignment="Left" Height="35" Margin="488,36,0,0" VerticalAlignment="Top" Width="103" FontSize="18" Background="Red" Foreground="White" Click="getFlagButton_Click"/>
-        <Label Content="password : " HorizontalAlignment="Left" Margin="27,38,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <CheckBox x:Name="adminCheckBox" Content="Check if Admin" HorizontalAlignment="Left" Height="22" Margin="315,43,0,0" VerticalAlignment="Top" Width="147" FontSize="14" Checked="adminCheckBox_Checked"/>
+        <CheckBox x:Name="adminCheckBox" Content="Check if Admin" HorizontalAlignment="Left" Height="22" Margin="52,49,0,0" VerticalAlignment="Top" Width="147" FontSize="14" Checked="adminCheckBox_Checked" RenderTransformOrigin="-1.507,1.522"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="319" Margin="0,105,0,0" VerticalAlignment="Top" Width="611">
             <TextBox x:Name="logTextBox" TextWrapping="Wrap" ScrollViewer.CanContentScroll="True" Text="[Log]"/>
         </Border>

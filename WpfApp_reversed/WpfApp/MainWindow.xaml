@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="WpfApp.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:WpfApp" Title="MainWindow" Height="468" Width="631">
+  <Grid Margin="0,0,0,-16">
+    <Border BorderBrush="#FF000000" BorderThickness="1" HorizontalAlignment="Center" Height="90" Margin="0,10,0,0" VerticalAlignment="Top" Width="611" />
+    <Button Name="getFlagButton" Content="Get Flag" HorizontalAlignment="Left" Height="35" Margin="488,36,0,0" VerticalAlignment="Top" Width="103" FontSize="18" Background="#FFFF0000" Foreground="#FFFFFFFF" Click="getFlagButton_Click" />
+    <CheckBox Name="adminCheckBox" Content="Check if Admin" HorizontalAlignment="Left" Height="22" Margin="52,49,0,0" VerticalAlignment="Top" Width="147" FontSize="14" RenderTransformOrigin="-1.507,1.522" Checked="adminCheckBox_Checked" />
+    <Border BorderBrush="#FF000000" BorderThickness="1" HorizontalAlignment="Center" Height="319" Margin="0,105,0,0" VerticalAlignment="Top" Width="611">
+      <TextBox Name="logTextBox" TextWrapping="Wrap" ScrollViewer.CanContentScroll="True" Text="[Log]" />
+    </Border>
+  </Grid>
+</Window>

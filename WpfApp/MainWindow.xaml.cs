@@ -56,6 +56,7 @@ namespace WpfApp
             if(state == State.admin && adminCheckBox.IsChecked == true)
             {
                 logTextBox.Text += Environment.NewLine + "Success!";
+                flagimage.Visibility = Visibility.Visible;
             }
             else
             {

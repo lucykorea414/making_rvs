@@ -10,9 +10,11 @@
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="90" Margin="0,10,0,0" VerticalAlignment="Top" Width="611"/>
         <Button x:Name="getFlagButton" Content="Get Flag" HorizontalAlignment="Left" Height="35" Margin="488,36,0,0" VerticalAlignment="Top" Width="103" FontSize="18" Background="Red" Foreground="White" Click="getFlagButton_Click"/>
         <CheckBox x:Name="adminCheckBox" Content="Check if Admin" HorizontalAlignment="Left" Height="22" Margin="52,49,0,0" VerticalAlignment="Top" Width="147" FontSize="14" Checked="adminCheckBox_Checked" RenderTransformOrigin="-1.507,1.522"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="319" Margin="0,105,0,0" VerticalAlignment="Top" Width="611">
-            <TextBox x:Name="logTextBox" TextWrapping="Wrap" ScrollViewer.CanContentScroll="True" Text="[Log]"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="74" Margin="0,105,0,0" VerticalAlignment="Top" Width="611">
+            <TextBox x:Name="logTextBox" TextWrapping="Wrap" ScrollViewer.CanContentScroll="True" Text="[Log]" Margin="0,0,0,-1"/>
         </Border>
+        <Image HorizontalAlignment="Left" Height="0" Margin="10,212,0,0" VerticalAlignment="Top" Width="0" Source="/제목을 입력해주세요_-001.png"/>
+        <Image x:Name="flagimage" HorizontalAlignment="Left" Height="211" Margin="143,212,0,0" VerticalAlignment="Top" Width="320" Source="/flag.png" Visibility="Hidden"/>
 
     </Grid>
 </Window>

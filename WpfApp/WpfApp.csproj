@@ -5,6 +5,43 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <StartupObject>WpfApp.App</StartupObject>
+    <Title>nuget?</Title>
+    <Authors>lucy</Authors>
+    <Company>lucy</Company>
+    <Product>nuget?</Product>
+    <Description>do you know nuget? what about wpf?</Description>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="flag.png" />
+    <None Remove="제목을 입력해주세요_-001.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="flag.png" />
+    <Resource Include="제목을 입력해주세요_-001.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
 
 </Project>
